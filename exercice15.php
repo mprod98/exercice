@@ -17,9 +17,9 @@
         ["prenom"=>"Thomas", "age"=> 18]
        ];
 
-    foreach($candidats as $cle => $element){
+    foreach($candidats as $candidat){
 
-        echo $candidats;  
+        echo $candidat["prenom"] ." ".($candidat["age"]<18? "mineur":"majeur")."<br>";  
     
     }
         
